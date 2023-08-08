@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок №3</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Блочні та рядкові теги. Теги для позначення форм та таблиць.
+            </h1>
+            <!--Блочні та рядкові теги  -->
+        </section>
+
+        <!-- Таблиці -->
+        <section>
+            <h2>Таблиці</h2>
+            <!-- Код розкладу уроків -->
+            <table>
+                <caption>Розклад занять</caption>
+                <thead>
+                    <tr>
+                        <th>Понеділок</th>
+                        <th>Середа</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Soft о 10 год</th>
+                    <th>Tehc o 10 год</th>
+                </tr>
+                <tr>
+                    <th>Tehc o 11 год</th>
+                </tr>
+            </table>
+            <!-- Табличка за використанням атрибутів -->
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Cloud service</th>
+                        <th colspan="3">Statistics</th>
+                    </tr>
+                    <tr>
+                        <th>Users</th>
+                        <th>Visits</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Google</td>
+                        <td>12000</td>
+                        <td>307000</td>
+                        <td>1000 Tb</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon</td>
+                        <td>9000</td>
+                        <td>200500</td>
+                        <td>800 Tb</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+        <!-- Форми -->
+        <section>
+            <h2>Форми</h2>
+            <form name="signup_form">
+                <label lang="en">
+                    email
+                    <input type="email" autocomplete="on" name="user_email" placeholder="Email" autofocus>
+                </label>
+
+                <labe>
+                    tel
+                    <input type="tel" placeholder="tel" autocomplete="on">
+                    </label>
+
+                    <label>
+                        password
+                        <input type="password" name="password" placeholder="Password">
+                    </label>
+
+                    <label>
+                        <input type="number" name="age" placeholder="age" value="0" min="18" max="80">
+                    </label>
+
+                    <button type="submit">Кнопка</button>
+            </form>
+
+            <hr>
+            <!-- Радіо-кнопки -->
+            <form>
+                <p>Choose a color:</p>
+                <label>
+                    <input type="radio" name="color" value="red" />
+                    Red
+                </label>
+                <label>
+                    <input type="radio" name="color" value="white" checked />
+                    White
+                </label>
+                <label>
+                    <input type="radio" name="color" value="green" />
+                    Green
+                </label>
+
+                <p>Select size:</p>
+                <label>
+                    <input type="radio" name="size" value="sm" />
+                    Small
+                </label>
+                <label>
+                    <input type="radio" name="size" value="md" />
+                    Medium
+                </label>
+                <label>
+                    <input type="radio" name="size" value="lg" checked />
+                    Large
+                </label>
+            </form>
+            <hr>
+            <!-- Чекбокс -->
+            <form>
+                <p>What are your hobbies?</p>
+                <label>
+                    <input type="checkbox" name="hobby" value="music" checked />
+                    Music
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="sports" checked />
+                    Sports
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="reading" />
+                    Reading
+                </label>
+            </form>
+            <hr>
+            <!-- Повзунки -->
+            <label>
+                Interest rate:
+                <input type="range" name="interest_rate" value="40" min="0" max="100" step="20" />
+            </label>
+
+            <p>Selected value: <span class="js-selected-value">40</span></p>
+
+            <hr>
+            <!-- Date -->
+            <label>
+                Date
+                <input type="date" />
+            </label>
+
+            <label>
+                Time
+                <input type="time" />
+            </label>
+
+            <label>
+                Date and time
+                <input type="datetime-local" />
+            </label>
+
+            <hr>
+            <!--  textarea-->
+            <form>
+                <label>
+                    Username
+                    <input type="text" name="username" placeholder="Jack Meadows">
+                </label>
+                <label>
+                    Feedback
+                    <textarea name="feedback" rows="5" placeholder="Enter your message here..."></textarea>
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            <hr>
+
+            <!-- select -->
+            <label for="size">Size</label>
+            <select id="size" name="size">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m" selected>Medium</option>
+                <option value="l">Large</option>
+            </select>
+            <hr>
+            <!-- Автозаповнення  -->
+            <label for="fav">Choose your favourite browser</label>
+            <input list="browsers" name="fav" id="fav" />
+
+            <datalist id="browsers">
+                <option>Edge</option>
+                <option>Firefox</option>
+                <option>Chrome</option>
+                <option>Opera</option>
+                <option>Safari</option>
+            </datalist>
+        </section>
+
+        <!-- Домашнє завдання №3-->
+        <!-- Завдання №1 -->
+        <p>Блокові теги</p>
+        <ul>
+            <li>&#10094;body/&#10095;</li>
+            <li>&#10094;header/&#10095;</li>
+            <li></li>
+        </ul>
+
+        <p>Рядкові теги</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <!-- Завдання 2. 
+        Створіть таблицю з розкладом ваших уроків. -->
+        <table>
+            <caption>Розклад занять</caption>
+            <thead>
+                <tr>
+                    <th>Понеділок</th>
+                    <th>Середа</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Soft о 10 год</th>
+                <th>Tehc o 10 год</th>
+            </tr>
+            <tr>
+                <th>Tehc o 11 год</th>
+            </tr>
+        </table>
+        <!-- Завдання 3. 
+            Створіть форму для заповнення даних користувача,
+             в якій буде інформація про ім’я та прізвище, 
+             пошту, телефон
+            та коментар.  -->
+        <form>
+            <label>
+                Name
+                <input type="name" name="user_name" />
+            </label>
+
+            <label>
+                surname
+                <input type="surname" name="user_surname" />
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" />
+            </label>
+            <label>
+                Phone number
+                <input type="tel" name="phone" />
+            </label>
+            <label>
+                Feedback
+                <textarea name="feedback" rows="5" placeholder="Enter your message here..."></textarea>
+            </label>
+        </form>
+    </main>
+    <footer></footer>
+
+
+</body>
+
+</html>
